@@ -1,0 +1,3 @@
+[submodule "s/struts2/Struts2_vulnerability_Environment"]
+	path = s/struts2/Struts2_vulnerability_Environment
+	url = ../../x-f1v3/Struts2_vulnerability_Environment.git
