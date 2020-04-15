@@ -8,7 +8,9 @@ ENV REDIS_VERSION 3.0.7
 ENV REDIS_DOWNLOAD_URL http://download.redis.io/releases/redis-3.0.7.tar.gz
 ENV REDIS_DOWNLOAD_SHA1 e56b4b7e033ae8dbf311f9191cf6fdf3ae974d1c
 
-RUN buildDeps='gcc libc6-dev make' \
+RUN sed -i 's/deb.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list && \
+    sed -i 's/deb http:\/\/security.debian.org/#deb http:\/\/mirrors.aliyun.com/g' /etc/apt/sources.list && \
+    buildDeps='gcc libc6-dev make' \
     && set -x \
     && apt-get update && apt-get install -y wget $buildDeps --no-install-recommends \
     && wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL" \
