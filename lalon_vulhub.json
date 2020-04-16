@@ -289,20 +289,20 @@
     "vul_path":"g/git/1/",
     "vul_cve_id":"CVE-2018-11235"
   },
-  "ImageMagick-CVE-2016–3714":{
-    "name":"ImageMagick-CVE-2016–3714",
-    "vul_name":"ImageMagick-CVE-2016–3714",
-    "vul_desc":"ImageMagick存在一处远程命令执行漏洞（CVE-2016–3714），当其处理的上传图片带有攻击代码时，可被远程执行任意代码，进而导致攻击者控制服务器。",
+  "ImageMagick-CVE-2016-3714":{
+    "name":"ImageMagick-CVE-2016-3714",
+    "vul_name":"ImageMagick-CVE-2016-3714",
+    "vul_desc":"ImageMagick存在一处远程命令执行漏洞（CVE-2016-3714），当其处理的上传图片带有攻击代码时，可被远程执行任意代码，进而导致攻击者控制服务器。",
     "docker_ports":{
       "80/tcp":"80"
     },
-    "image_tar": "lalon_vul_imagemagick_cve-2016–3714.tar",
-    "image_repository":"lalon_vul_imagemagick_cve-2016–3714",
+    "image_tar": "lalon_vul_imagemagick_cve-2016-3714.tar",
+    "image_repository":"lalon_vul_imagemagick_cve-2016-3714",
     "image_tag":"latest",
-    "container_name":"lalon_vul_imagemagick_cve-2016–3714",
+    "container_name":"lalon_vul_imagemagick_cve-2016-3714",
     "command":null,
     "vul_path":"i/imagemagick/1/",
-    "vul_cve_id":"CVE-2016–3714"
+    "vul_cve_id":"CVE-2016-3714"
   },
   "Jenkins-CVE-2015-8103":{
     "name":"Jenkins-CVE-2015-8103",
