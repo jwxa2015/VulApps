@@ -1,4 +1,83 @@
 {
+  "Struts2-S2-001": {
+    "name": "Struts2-S2-001",
+    "vul_name": "Struts2-S2-001",
+    "vul_desc": "Struts2远程代码执行漏洞(S2-001)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-001.tar",
+    "image_repository":"lalon_vul_s2-001",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-001",
+    "command":null,
+    "vul_path":"s/struts2/s2-001/",
+    "vul_other_id":"S2-001"
+  },
+  "Struts2-S2-029": {
+    "name": "Struts2-S2-029",
+    "vul_name": "Struts2-S2-029",
+    "vul_desc": "S2-029远程代码执行漏洞",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-029.tar",
+    "image_repository":"lalon_vul_s2-029",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-029",
+    "command":null,
+    "vul_path":"s/struts2/s2-029/",
+    "vul_cve_id":"CVE-2016-0785",
+    "vul_other_id":"S2-029"
+  },
+  "Struts2-S2-032": {
+    "name": "Struts2-S2-032",
+    "vul_name": "Struts2-S2-032",
+    "vul_desc": "S2-032远程代码执行漏洞",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-032.tar",
+    "image_repository":"lalon_vul_s2-032",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-032",
+    "command":null,
+    "vul_path":"s/struts2/s2-032/",
+    "vul_cve_id":"CVE-2016-3081",
+    "vul_other_id":"S2-032"
+  },
+  "Struts2-S2-033": {
+    "name": "Struts2-S2-033",
+    "vul_name": "Struts2-S2-033",
+    "vul_desc": "Apache Strut2 REST插件存在漏洞，可以远程执行任意指令，该漏洞编号为S2-033（CVE-2016-3087 ）",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-033.tar",
+    "image_repository":"lalon_vul_s2-033",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-033",
+    "command":null,
+    "vul_path":"s/struts2/s2-033/",
+    "vul_cve_id":"CVE-2016-3087",
+    "vul_other_id":"S2-033"
+  },
+  "Struts2-S2-037": {
+    "name": "Struts2-S2-037",
+    "vul_name": "Struts2-S2-037",
+    "vul_desc": "Apache Struts2在使用REST插件的情况下，攻击者使用REST调用恶意表达式可以远程执行代码。该漏洞编号为CVE-2016-4438，目前命名为S2-037。,黑客可以利用漏洞直接执行任意代码，绕过文件限制，上传文件，执行远程命令，控制服务器，直接盗取用户的所有资料，该漏洞广泛影响所有struts版本。",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-037.tar",
+    "image_repository":"lalon_vul_s2-037",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-037",
+    "command":null,
+    "vul_path":"s/struts2/s2-037/",
+    "vul_cve_id":"CVE-2016-4438",
+    "vul_other_id":"S2-037"
+  },
   "Struts2-S2-045": {
     "name": "Struts2-S2-045",
     "vul_name": "Struts2-S2-045",
@@ -15,21 +94,36 @@
     "vul_cve_id":"CVE-2017-5638",
     "vul_other_id":"S2-045"
   },
-  "Struts2-S2-057": {
-    "name": "Struts2-S2-057",
-    "vul_name": "Struts2-S2-057",
-    "vul_desc": "Struts2 远程代码执行漏洞(S2-057)",
+  "Struts2-S2-046": {
+    "name": "Struts2-S2-046",
+    "vul_name": "Struts2-S2-046",
+    "vul_desc": "Struts2_Jakarta_Plugin插件远程代码执行漏洞(S2-046)",
     "docker_ports": {
         "8080/tcp":"80"
       },
-    "image_tar": "lalon_vul_s2-057.tar",
-    "image_repository":"lalon_vul_s2-057",
+    "image_tar": "lalon_vul_s2-046.tar",
+    "image_repository":"lalon_vul_s2-046",
     "image_tag":"latest",
-    "container_name":"lalon_vul_s2-057",
+    "container_name":"lalon_vul_s2-046",
     "command":null,
-    "vul_path":"s/struts2/s2-057/",
-    "vul_cve_id":"CVE-2018-11776",
-    "vul_other_id":"S2-057"
+    "vul_path":"s/struts2/s2-046/",
+    "vul_other_id":"S2-046"
+  },
+  "Struts2-S2-048": {
+    "name": "Struts2-S2-048",
+    "vul_name": "Struts2-S2-048",
+    "vul_desc": "Struts2-struts1-plugin 插件远程代码执行漏洞(S2-048)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-048.tar",
+    "image_repository":"lalon_vul_s2-048",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-048",
+    "command":null,
+    "vul_path":"s/struts2/s2-048/",
+    "vul_cve_id":"CVE-2017-9791",
+    "vul_other_id":"S2-048"
   },
   "Struts2-S2-052": {
     "name": "Struts2-S2-052",
@@ -46,6 +140,38 @@
     "vul_path":"s/struts2/s2-052/",
     "vul_cve_id":"CVE-2017-9805",
     "vul_other_id":"S2-052"
+  },
+  "Struts2-S2-053": {
+    "name": "Struts2-S2-053",
+    "vul_name": "Struts2-S2-053",
+    "vul_desc": "Struts2 Freemarker tags 远程代码执行漏洞(S2-053)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-053.tar",
+    "image_repository":"lalon_vul_s2-053",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-053",
+    "command":null,
+    "vul_path":"s/struts2/s2-053/",
+    "vul_cve_id":"CVE-2017-12611",
+    "vul_other_id":"S2-053"
+  },
+  "Struts2-S2-057": {
+    "name": "Struts2-S2-057",
+    "vul_name": "Struts2-S2-057",
+    "vul_desc": "Struts2 远程代码执行漏洞(S2-057)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-057.tar",
+    "image_repository":"lalon_vul_s2-057",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-057",
+    "command":null,
+    "vul_path":"s/struts2/s2-057/",
+    "vul_cve_id":"CVE-2018-11776",
+    "vul_other_id":"S2-057"
   },
   "JBOSS-CVE-2015-8103":{
     "name":"JBOSS-CVE-2015-8103",
@@ -334,5 +460,66 @@
     "command":null,
     "vul_path":"n/nodejs/1/",
     "vul_cve_id":"CVE-2017-5941"
+  },
+  "Supervisor-CVE-2017-11610":{
+    "name":"Supervisor-CVE-2017-11610",
+    "vul_name":"Supervisor-CVE-2017-11610",
+    "vul_desc":"Supervisord远程命令执行漏洞（CVE-2017-11610）",
+    "docker_ports":{
+      "9001/tcp":"9001"
+    },
+    "image_tar": "lalon_vul_supervisor_cve-2017-11610.tar",
+    "image_repository":"lalon_vul_supervisor_cve-2017-11610",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_supervisor_cve-2017-11610",
+    "command":null,
+    "vul_path":"s/supervisor/1/",
+    "vul_cve_id":"CVE-2017-11610"
+  },
+  "Memcached-CVE-2016-8704":{
+    "name":"Memcached-CVE-2016-8704",
+    "vul_name":"Memcached-CVE-2016-8704",
+    "vul_desc":"Memcached是一个广泛使用的高速缓存系统，小于1.4.33的版本存在3个整数溢出漏洞",
+    "docker_ports":{
+      "11211/tcp":"11211"
+    },
+    "image_tar": "lalon_vul_memcached_cve-2016-8704.tar",
+    "image_repository":"lalon_vul_memcached_cve-2016-8704",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_memcached_cve-2016-8704",
+    "command":null,
+    "vul_path":"m/memcached/cve-2016-8704/",
+    "vul_cve_id":"CVE-2016-8704;CVE-2016-8705;CVE-2016-8706",
+    "vul_other_id":"TALOS-2016-0219"
+  },
+  "Spring-CVE-2017-8046":{
+    "name":"Spring-CVE-2017-8046",
+    "vul_name":"Spring-CVE-2017-8046",
+    "vul_desc":"Spring Data REST PATCH请求代码执行漏洞(CVE-2017-8046)",
+    "docker_ports":{
+      "8080/tcp":"8080"
+    },
+    "image_tar": "lalon_vul_spring_cve-2017-8046.tar",
+    "image_repository":"lalon_vul_spring_cve-2017-8046",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_spring_cve-2017-8046",
+    "command":null,
+    "vul_path":"s/spring/1/",
+    "vul_cve_id":"CVE-2017-8046"
+  },
+  "Spring-CVE-2018-1273":{
+    "name":"Spring-CVE-2018-1273",
+    "vul_name":"Spring-CVE-2018-1273",
+    "vul_desc":"攻击者可以在未获得授权的情况下，将精心制作的请求参数注入到存在该漏洞的服务器上，从而发起远程代码执行攻击。",
+    "docker_ports":{
+      "8080/tcp":"8080"
+    },
+    "image_tar": "lalon_vul_spring_cve-2018-1273.tar",
+    "image_repository":"lalon_vul_spring_cve-2018-1273",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_spring_cve-2018-1273",
+    "command":null,
+    "vul_path":"s/spring/2/",
+    "vul_cve_id":"CVE-2018-1273"
   }
 }
