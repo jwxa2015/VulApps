@@ -415,28 +415,27 @@
     "vul_path":"g/git/1/",
     "vul_cve_id":"CVE-2018-11235"
   },
-  "ImageMagick-CVE-2016–3714":{
-    "name":"ImageMagick-CVE-2016–3714",
-    "vul_name":"ImageMagick-CVE-2016–3714",
+  "ImageMagick-CVE-2016-3714":{
+    "name":"ImageMagick-CVE-2016-3714",
+    "vul_name":"ImageMagick-CVE-2016-3714",
     "vul_desc":"ImageMagick存在一处远程命令执行漏洞（CVE-2016–3714），当其处理的上传图片带有攻击代码时，可被远程执行任意代码，进而导致攻击者控制服务器。",
     "docker_ports":{
       "80/tcp":"80"
     },
-    "image_tar": "lalon_vul_imagemagick_cve-2016–3714.tar",
-    "image_repository":"lalon_vul_imagemagick_cve-2016–3714",
+    "image_tar": "lalon_vul_imagemagick_cve-2016-3714.tar",
+    "image_repository":"lalon_vul_imagemagick_cve-2016-3714",
     "image_tag":"latest",
-    "container_name":"lalon_vul_imagemagick_cve-2016–3714",
+    "container_name":"lalon_vul_imagemagick_cve-2016-3714",
     "command":null,
     "vul_path":"i/imagemagick/1/",
-    "vul_cve_id":"CVE-2016–3714"
+    "vul_cve_id":"CVE-2016-3714"
   },
   "Jenkins-CVE-2015-8103":{
     "name":"Jenkins-CVE-2015-8103",
     "vul_name":"Jenkins-CVE-2015-8103",
     "vul_desc":"Jenkins 「Java 反序列化」过程远程命令执行漏洞(CVE-2015-8103)",
     "docker_ports":{
-      "8080/tcp":"8080",
-      "50000/tcp":"50000"
+      "8080/tcp":"8080"
     },
     "image_tar": "lalon_vul_jenkins_cve-2015-8103.tar",
     "image_repository":"lalon_vul_jenkins_cve-2015-8103",
@@ -445,6 +444,21 @@
     "command":null,
     "vul_path":"j/jenkins/1/",
     "vul_cve_id":"CVE-2015-8103"
+  },
+  "Jenkins-CVE-2018-1000861":{
+    "name":"Jenkins-CVE-2018-1000861",
+    "vul_name":"Jenkins-CVE-2018-1000861",
+    "vul_desc":"Jenkins远程命令执行漏洞（CVE-2018-1000861）",
+    "docker_ports":{
+      "8080/tcp":"8080"
+    },
+    "image_tar": "lalon_vul_jenkins_cve-2018-1000861.tar",
+    "image_repository":"lalon_vul_jenkins_cve-2018-1000861",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_jenkins_cve-2018-1000861",
+    "command":null,
+    "vul_path":"j/jenkins/CVE-2018-1000861/",
+    "vul_cve_id":"CVE-2018-1000861"
   },
   "Nodejs-CVE-2017-5941":{
     "name":"Nodejs-CVE-2017-5941",
@@ -521,5 +535,50 @@
     "command":null,
     "vul_path":"s/spring/2/",
     "vul_cve_id":"CVE-2018-1273"
+  },
+  "Weblogic-CVE-2018-2894":{
+    "name":"Weblogic-CVE-2018-2894",
+    "vul_name":"Weblogic-CVE-2018-2894",
+    "vul_desc":"WebLogic管理端未授权的两个页面存在任意上传getshell漏洞，可直接获取权限。",
+    "docker_ports":{
+      "7001/tcp":"7001"
+    },
+    "image_tar": "lalon_vul_weblogic_cve-2018-2894.tar",
+    "image_repository":"lalon_vul_weblogic_cve-2018-2894",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_weblogic_cve-2018-2894",
+    "command":null,
+    "vul_path":"w/weblogic/CVE-2018-2894/",
+    "vul_cve_id":"CVE-2018-2894"
+  },
+  "Weblogic-CVE-2018-2628":{
+    "name":"Weblogic-CVE-2018-2628",
+    "vul_name":"Weblogic-CVE-2018-2628",
+    "vul_desc":"Weblogic Server WLS Core Components中出现的一个反序列化漏洞（CVE-2018-2628），该漏洞通过t3协议触发，可导致未授权的用户在远程服务器执行任意命令。",
+    "docker_ports":{
+      "7001/tcp":"7001"
+    },
+    "image_tar": "lalon_vul_weblogic_cve-2018-2628.tar",
+    "image_repository":"lalon_vul_weblogic_cve-2018-2628",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_weblogic_cve-2018-2628",
+    "command":null,
+    "vul_path":"w/weblogic/CVE-2018-2628/",
+    "vul_cve_id":"CVE-2018-2628"
+  },
+  "Weblogic-CVE-2017-10271":{
+    "name":"Weblogic-CVE-2017-10271",
+    "vul_name":"Weblogic-CVE-2017-10271",
+    "vul_desc":"Weblogic的WLS Security组件对外提供webservice服务，其中使用了XMLDecoder来解析用户传入的XML数据，在解析的过程中出现反序列化漏洞，导致可执行任意命令。",
+    "docker_ports":{
+      "7001/tcp":"7001"
+    },
+    "image_tar": "lalon_vul_weblogic_cve-2017-10271.tar",
+    "image_repository":"lalon_vul_weblogic_cve-2017-10271",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_weblogic_cve-2017-10271",
+    "command":null,
+    "vul_path":"w/weblogic/CVE-2017-10271/",
+    "vul_cve_id":"CVE-2017-10271"
   }
 }
