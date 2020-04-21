@@ -1,7 +1,7 @@
 FROM tomcat:8-jre8
 MAINTAINER Medici.Yan@Gmail.com
 
-ENV WAR_URL http://vulapps.xuanbo.cc/s/struts2/struts2/s2-048-1.war
+ENV WAR_URL https://github.com/x-f1v3/Struts2_vulnerability_Environment/raw/master/S2-048.war
 
 WORKDIR /tmp
 
