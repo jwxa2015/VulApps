@@ -10,7 +10,7 @@ RUN set -x \
     && chmod a+x /start.sh \
     && mkdir /htdocs &&\
     cp /tmp/spring-data-rest-cve-2017-8046_v2.jar /htdocs/ROOT.jar && \
-    rm /tmp/*
+    rm /tmp/spring-data-rest-cve-2017-8046_v2.jar
 #    && wget -qO /htdocs/ROOT.jar $JAR_URL
 
 EXPOSE 8080
