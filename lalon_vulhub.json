@@ -14,6 +14,116 @@
     "vul_path":"s/struts2/s2-001/",
     "vul_other_id":"S2-001"
   },
+  "Struts2-S2-007": {
+    "name": "Struts2-S2-007",
+    "vul_name": "Struts2-S2-007",
+    "vul_desc": "Apache Struts2远程代码执行漏洞(S2-007)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-007.tar",
+    "image_repository":"lalon_vul_s2-007",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-007",
+    "command":null,
+    "vul_path":"s/struts2/s2-007/",
+    "vul_other_id":"S2-007"
+  },
+  "Struts2-S2-008": {
+    "name": "Struts2-S2-008",
+    "vul_name": "Struts2-S2-008",
+    "vul_desc": "Apache Struts2远程代码执行漏洞(S2-008)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-008.tar",
+    "image_repository":"lalon_vul_s2-008",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-008",
+    "command":null,
+    "vul_path":"s/struts2/s2-008/",
+    "vul_other_id":"S2-008"
+  },
+  "Struts2-S2-012": {
+    "name": "Struts2-S2-012",
+    "vul_name": "Struts2-S2-012",
+    "vul_desc": "Apache Struts2远程代码执行漏洞(S2-012)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-012.tar",
+    "image_repository":"lalon_vul_s2-012",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-012",
+    "command":null,
+    "vul_path":"s/struts2/s2-012/",
+    "vul_cve_id":"CVE-2013-1965",
+    "vul_other_id":"S2-012"
+  },
+  "Struts2-S2-013": {
+    "name": "Struts2-S2-013",
+    "vul_name": "Struts2-S2-013",
+    "vul_desc": "Apache Struts2远程代码执行漏洞(S2-013)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-013.tar",
+    "image_repository":"lalon_vul_s2-013",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-013",
+    "command":null,
+    "vul_path":"s/struts2/s2-013/",
+    "vul_cve_id":"CVE-2013-1966",
+    "vul_other_id":"S2-013"
+  },
+  "Struts2-S2-015": {
+    "name": "Struts2-S2-015",
+    "vul_name": "Struts2-S2-015",
+    "vul_desc": "Apache Struts2远程代码执行漏洞(S2-015)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-015.tar",
+    "image_repository":"lalon_vul_s2-015",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-015",
+    "command":null,
+    "vul_path":"s/struts2/s2-015/",
+    "vul_cve_id":"CVE-2013-2135;CVE-2013-2134",
+    "vul_other_id":"S2-015"
+  },
+  "Struts2-S2-016": {
+    "name": "Struts2-S2-016",
+    "vul_name": "Struts2-S2-016",
+    "vul_desc": "Apache Struts2远程代码执行漏洞(S2-016)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-016.tar",
+    "image_repository":"lalon_vul_s2-016",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-016",
+    "command":null,
+    "vul_path":"s/struts2/s2-016/",
+    "vul_cve_id":"CVE-2013-2251",
+    "vul_other_id":"S2-016"
+  },
+  "Struts2-S2-019": {
+    "name": "Struts2-S2-019",
+    "vul_name": "Struts2-S2-019",
+    "vul_desc": "Apache Struts2远程代码执行漏洞(S2-019)",
+    "docker_ports": {
+        "8080/tcp":"80"
+      },
+    "image_tar": "lalon_vul_s2-019.tar",
+    "image_repository":"lalon_vul_s2-019",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_s2-019",
+    "command":null,
+    "vul_path":"s/struts2/s2-019/",
+    "vul_cve_id":"CVE-2013-4316",
+    "vul_other_id":"S2-019"
+  },
   "Struts2-S2-029": {
     "name": "Struts2-S2-029",
     "vul_name": "Struts2-S2-029",
@@ -610,6 +720,21 @@
     "command":null,
     "vul_path":"c/cisco/1/",
     "vul_cve_id":"CVE-2016-6366"
+  },
+  "SSH-CVE-2018-10933":{
+    "name":"SSH-CVE-2018-10933",
+    "vul_name":"SSH-CVE-2018-10933",
+    "vul_desc":"libssh是一个提供ssh相关接口的开源库，包含服务端、客户端等。其服务端代码中存在一处逻辑错误，攻击者可以在认证成功前发送`MSG_USERAUTH_SUCCESS`消息，绕过认证过程，未授权访问目标SSH服务器。",
+    "docker_ports":{
+      "22/tcp":"22"
+    },
+    "image_tar": "lalon_vul_ssh_cve-2018-10933.tar",
+    "image_repository":"lalon_vul_ssh_cve-2018-10933",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_ssh_cve-2018-10933",
+    "command":null,
+    "vul_path":"s/ssh/SSH-CVE-2018-10933/",
+    "vul_cve_id":"CVE-2018-10933"
   }
 
 }
