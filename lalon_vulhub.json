@@ -313,7 +313,7 @@
   "TOMCAT-CVE-2020-1938":{
     "name":"TOMCAT-CVE-2020-1938",
     "vul_name":"TOMCAT-CVE-2020-1938",
-    "vul_desc":"Tomcat Apache Tomcat 文件包含漏洞(CVE-2020-1938)",
+    "vul_desc":"由于 Tomcat AJP 协议设计上存在缺陷，攻击者通过 Tomcat AJP Connector 可以读取或包含 Tomcat 上所有 webapp 目录下的任意文件，例如可以读取 webapp 配置文件或源代码。此外在目标应用有文件上传功能的情况下，配合文件包含的利用还可以达到远程代码执行的危害。",
     "docker_ports":{
       "8080/tcp":"8080"
     },
@@ -580,5 +580,36 @@
     "command":null,
     "vul_path":"w/weblogic/CVE-2017-10271/",
     "vul_cve_id":"CVE-2017-10271"
+  },
+  "MiniHttpd-CVE-2018-18778":{
+    "name":"MiniHttpd-CVE-2018-18778",
+    "vul_name":"MiniHttpd-CVE-2018-18778",
+    "vul_desc":"mini_httpd任意文件读取漏洞（CVE-2018-18778）",
+    "docker_ports":{
+      "8080/tcp":"8080"
+    },
+    "image_tar": "lalon_vul_minihttpd_cve-2018-18778.tar",
+    "image_repository":"lalon_vul_weblogic_cve-2018-18778",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_weblogic_cve-2018-18778",
+    "command":null,
+    "vul_path":"m/mini_httpd/CVE-2018-18778/",
+    "vul_cve_id":"CVE-2018-18778"
+  },
+  "Cisco-CVE-2016-6366":{
+    "name":"Cisco-CVE-2016-6366",
+    "vul_name":"Cisco-CVE-2016-6366",
+    "vul_desc":"Cisco ASA SNMP 远程代码执行漏洞(方程式 EXBA),Cisco ASA 防火墙 8.x~8.4 版本 Simple Network Management Protocol 存在远程代码执行漏洞，黑客可在获取 community string 后执行任意代码。在开启 SSH 或 Telnet 情况下，可通过代码执行暂时关闭身份认证，从而以任意密码远程登录防火墙。",
+    "docker_ports":{
+      "2001/tcp":"2001"
+    },
+    "image_tar": "lalon_vul_cisco_cve-2016-6366.tar",
+    "image_repository":"lalon_vul_cisco_cve-2016-6366",
+    "image_tag":"latest",
+    "container_name":"lalon_vul_cisco_cve-2016-6366",
+    "command":null,
+    "vul_path":"c/cisco/1/",
+    "vul_cve_id":"CVE-2016-6366"
   }
+
 }
