@@ -733,7 +733,7 @@
     "image_tag":"latest",
     "container_name":"lalon_vul_ssh_cve-2018-10933",
     "command":null,
-    "vul_path":"s/ssh/SSH-CVE-2018-10933/",
+    "vul_path":"s/ssh/CVE-2018-10933/",
     "vul_cve_id":"CVE-2018-10933"
   }
 
